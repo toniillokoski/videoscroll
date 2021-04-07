@@ -10,11 +10,10 @@ const controller = new ScrollMagic.Controller();
 
 //Scenes
 let scene = new ScrollMagic.Scene({
-  duration: 8000,
+  duration: 10000,
   triggerElement: intro,
   triggerHook: 0
 })
-  .addIndicators()
   .setPin(intro)
   .addTo(controller);
 
@@ -30,7 +29,7 @@ let scene2 = new ScrollMagic.Scene({
   .addTo(controller);
 
 //Video Animation
-let accelamount = 0.1;
+let accelamount = 0.3;
 let scrollpos = 0;
 let delay = 0;
 

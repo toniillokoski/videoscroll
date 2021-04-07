@@ -16,6 +16,8 @@ body {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .intro h1 {
@@ -39,5 +41,12 @@ section h1 {
 }
 
 .end {
-  background-color: lightgray;
+  background-image: url(/weeknd.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.end h1 {
+  position: relative;
+  left: -6%;
 }
