@@ -17,18 +17,21 @@ let scene = new ScrollMagic.Scene({
   .setPin(intro)
   .addTo(controller);
 
+
+
 //Text Animation
-let textAnim = TweenMax.fromTo(text, 3, { opacity: 1 }, { opacity: 0 });
+let textAnim = TweenMax.fromTo(text, 1, { opacity: 1 }, { opacity: 0 });
 
 let scene2 = new ScrollMagic.Scene({
-  duration: 1000,
+  duration: 3000,
   triggerElement: intro,
   triggerHook: 0
 })
   .setTween(textAnim)
   .addTo(controller);
 
-//Video Animation
+
+//Video Animation Acceleration
 let accelamount = 0.3;
 let scrollpos = 0;
 let delay = 0;
